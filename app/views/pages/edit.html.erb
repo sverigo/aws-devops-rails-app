@@ -1,0 +1,10 @@
+<h1>Edit page</h1>
+
+<%= simple_form_for(@page, html: { class: 'form-inline' }) do |form| %>
+	<%= form.error_notification %>
+
+	<%= form.input :name %>
+	<%= form.input :description %>
+
+	<%= form.button :submit %>
+<% end %>
