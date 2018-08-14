@@ -21,6 +21,12 @@ Description: "CloudFormation template for Rails application"
 #
 #  DbInstanceMasterPassword:
 
+Parameters:
+  DbInstanceMasterPassword:
+    NoEcho: true
+    Description: The database admin account password
+    Type: String
+
 
 Mappings:
   AWSRegion2AMI:
@@ -223,7 +229,7 @@ Resources:
       DBInstanceClass: "db.t2.micro"
       Engine: "postgres"
       MasterUsername: root
-      MasterUserPassword: root1488
+      MasterUserPassword: !Ref DbInstanceMasterPassword
       MultiAZ: 'false'
       DBSubnetGroupName: !Ref DbSubnetGroup
       VPCSecurityGroups:
