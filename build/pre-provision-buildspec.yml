@@ -9,6 +9,7 @@ phases:
     commands:
       - DATABASE_ROOT_PASSWORD=$(aws ssm get-parameter --name RAILS-DATABASE-ROOT-PASSWORD --with-decryption --query 'Parameter.Value' --output text)
       - sed -i s/SED_REPLACE_PASSWORD/$DATABASE_ROOT_PASSWORD/g templates/aws-provision-configuration.json
+      - cat templates/aws-provision.yaml
 
   post_build:
     commands:
