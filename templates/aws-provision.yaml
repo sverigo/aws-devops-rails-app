@@ -335,7 +335,7 @@ Resources:
           sudo easy_install aws-cfn-bootstrap-latest
           sudo /usr/local/bin/cfn-init --stack ${AWS::StackName} --resource WebServerInstance --region ${AWS::Region}
           sudo apt-get update
-          sudo apt-get install ruby-full
+          sudo apt-get install -y ruby-full
           wget https://aws-codedeploy-us-east-2.s3.amazonaws.com/latest/install
           chmod +x ./install
           sudo ./install auto
