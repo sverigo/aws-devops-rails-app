@@ -12,8 +12,8 @@ sudo sh -c "echo $IP >> /etc/hosts"
 # ruby install
 
 sudo apt-get update
-sudo apt-get install build-essential libssl-dev libyaml-dev libreadline-dev openssl curl git-core zlib1g-dev bison libxml2-dev libxslt1-dev libcurl4-openssl-dev nodejs libsqlite3-dev sqlite3
-sudo apt-get install ruby-full
+sudo apt-get install -y build-essential libssl-dev libyaml-dev libreadline-dev openssl curl git-core zlib1g-dev bison libxml2-dev libxslt1-dev libcurl4-openssl-dev nodejs libsqlite3-dev sqlite3
+sudo apt-get install -y ruby-full
 
 # nginx and passenger install
 
@@ -25,7 +25,7 @@ sudo chmod 600 /etc/apt/sources.list.d/passenger.list
 
 sudo apt-get update
 
-sudo apt-get install nginx-extras passenger
+sudo apt-get install -y nginx-extras passenger
 
 # nginx with passenger config update
 
