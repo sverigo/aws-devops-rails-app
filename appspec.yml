@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: deploy/configure_software.sh
       timeout: 300
       runas: root
