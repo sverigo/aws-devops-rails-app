@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+files: 
+  - source: /
+    destination: /var/www
+hooks:
+  BeforeInstall:
+    - location: deploy/configure_software.sh
+      timeout: 300
+      runas: root
+    - location: deploy/start_server.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: deploy/stop_server.sh
+      timeout: 300
+      runas: root
