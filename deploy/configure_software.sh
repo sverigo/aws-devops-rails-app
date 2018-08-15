@@ -31,4 +31,5 @@ sudo apt-get install nginx-extras passenger
 
 sudo sed -i '/passenger.conf/a \\tpassenger_ruby /usr/bin/ruby;' /etc/nginx/nginx.conf
 sudo sed -i '/passenger.conf/a \\tpassenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;' /etc/nginx/nginx.conf
+
 sudo service nginx restart
