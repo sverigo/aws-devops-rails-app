@@ -55,4 +55,7 @@ export DATABASE_HOST=$(aws cloudformation describe-stacks --query 'Stacks[?conta
 sudo sed -i s/SED_REPLACE_DATABASE_ROOT_PASSWORD/$DATABASE_ROOT_PASSWORD/g /var/www/rails-app/config/database.yml
 sudo sed -i s/SED_REPLACE_DATABASE_HOST/$DATABASE_HOST/g /var/www/rails-app/config/database.yml
 
+cd /var/www/rails-app
+bundle install
+
 sudo service nginx restart
