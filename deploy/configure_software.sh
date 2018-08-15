@@ -35,7 +35,9 @@ sudo service nginx restart
 
 
 
-sudo rm /etc/nginx/sites-available/default
+sudo sed -i '/listen 80 default_server;/d' /etc/nginx/sites-available/default
+sudo sed -i '/listen [::]:80 default_server ipv6only=on;/d' /etc/nginx/sites-available/default
+
 sudo sh -c "echo ' server {
   listen 80 default_server;
   passenger_enabled on;
