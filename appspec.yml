@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files: 
   - source: /
-    destination: /var/www
+    destination: /var/www/rails-app
 hooks:
   BeforeInstall:
     - location: deploy/configure_software.sh

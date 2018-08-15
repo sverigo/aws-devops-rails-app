@@ -12,10 +12,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: db_rails
   username: root
-  password: root1488
-  host: db-rails.cptkllmgclxq.us-west-2.rds.amazonaws.com
+  password: SED_REPLACE_DATABASE_ROOT_PASSWORD
+  host: SED_REPLACE_DATABASE_HOST
   port: 5432
 
 #development:
