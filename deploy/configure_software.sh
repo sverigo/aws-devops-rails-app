@@ -8,5 +8,6 @@ sudo sed -i s/SED_REPLACE_DATABASE_HOST/$DATABASE_HOST/g /var/www/rails-app/conf
 
 cd /var/www/rails-app
 bundle install
+sudo chmod -R 777 /var/www/rails-app
 
 sudo service nginx restart

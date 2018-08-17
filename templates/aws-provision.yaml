@@ -370,6 +370,8 @@ Resources:
           sudo service nginx restart
 
           sudo gem install rails
+
+          sudo pip install awscli
   
 Outputs:
   RDSAddress:
