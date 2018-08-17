@@ -12,7 +12,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: rails-db
+  database: rails_db
   username: root
   password: SED_REPLACE_DATABASE_ROOT_PASSWORD
   host: SED_REPLACE_DATABASE_HOST

@@ -10,7 +10,7 @@ cd /var/www/rails-app
 bundle install
 sudo chmod -R 777 /var/www/rails-app
 
-bundle exec rake db:migrate
+# bundle exec rake db:migrate
 
 
 sudo service nginx restart
