@@ -371,7 +371,7 @@ Resources:
 
           sudo gem install rails
 
-          sudo pip install awscli
+          sudo apt install -y awscli
   
 Outputs:
   RDSAddress:
