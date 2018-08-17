@@ -370,7 +370,6 @@ Resources:
           sudo service nginx restart
 
           sudo gem install rails
-
           sudo apt install -y awscli
   
 Outputs:
