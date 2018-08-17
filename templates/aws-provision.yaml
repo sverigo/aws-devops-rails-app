@@ -368,6 +368,8 @@ Resources:
           sudo ln -s /etc/nginx/sites-available/rails-app /etc/nginx/sites-enabled/rails-app
 
           sudo service nginx restart
+
+          sudo gem install rails
   
 Outputs:
   RDSAddress:
