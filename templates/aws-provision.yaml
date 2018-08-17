@@ -370,7 +370,10 @@ Resources:
           sudo service nginx restart
 
           sudo gem install rails
-          sudo apt install -y awscli
+          
+          sudo apt-get install -y python3-pip
+          sudo pip3 install awscli
+          sudo ln -s /home/ubuntu/.local/bin/aws /usr/bin/aws
   
 Outputs:
   RDSAddress:
